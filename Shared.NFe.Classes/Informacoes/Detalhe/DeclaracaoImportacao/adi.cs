@@ -69,5 +69,17 @@ namespace NFe.Classes.Informacoes.Detalhe.DeclaracaoImportacao
         {
             return vDescDI.HasValue;
         }
+        
+        public bool ShouldSerializenDraw()
+        {
+            if (string.IsNullOrEmpty(nDraw))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }
